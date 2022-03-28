@@ -1,9 +1,10 @@
-html{
-    
+html, body {
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: lightgray;
-    height: 10em;
+    height: 14em;
 }
 
 header img{
@@ -11,30 +12,16 @@ header img{
 }
 
 header h1{
+    padding-left:1em;
+    padding-top: 0.5em;
     float: left;
-    padding-left: .8em;
-    font-size: 4.5em;
+    font-size: 3.2em;
     font-style: bold;
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    color: #C8102E;
+    font-family: Arial Black, sans-serif;
+    color: black;
     text-transform: uppercase;
     margin-bottom: 0;
-}
-
-body{
-
-}
-/*
-body{
-    background-color: #9d2235;
-}
-*/
-
-p.centerbold{
     text-align: center;
-    font-weight: bold;
-    font-family: "Lyon Display Web", Times, "Times New Roman", serif;
-    font-size: 32px;
 }
 
 p.content{
@@ -54,105 +41,46 @@ img.content{
     width: auto;
 }
 
-h1.red {
-    color:#9d2235;
-    font-size: 250%;
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    font-feature-settings: "liga", "kern";
-    text-transform: uppercase;
-    /*background-image: linear-gradient(0deg, #C8102E 0%, #C8102E 100%);
-    background-position: 0 67%;
-    background-repeat: repeat-x;
-    background-size: 1em 0.1786em;*/
-}
-
-h1.white {
-    color: white
-}
-
-h2.red {
-    color:#9d2235;
-    font-size: 250%;
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    font-feature-settings: "liga", "kern";
-    text-transform: uppercase;
-    /*background-image: linear-gradient(0deg, #C8102E 0%, #C8102E 100%);
-    background-position: 0 67%;
-    background-repeat: repeat-x;
-    background-size: 1em 0.1786em;*/
-}
-
-h4.red {
-    color:#9d2235;
-    font-size: 250%;
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    font-feature-settings: "liga", "kern";
-    text-transform: uppercase;
-    text-align: center;
-    /*background-image: linear-gradient(0deg, #C8102E 0%, #C8102E 100%);
-    background-position: 0 67%;
-    background-repeat: repeat-x;
-    background-size: 1em 0.1786em;*/
-}
-
-button {
-    color:#C8102E;
-}
 
 footer{
-    position: relative;
+    position:sticky;
     left: 0;
-    bottom: 8;
     width: 100%;
+    height: 4.8em;
+    
     text-align: center;
+    background-color: #C8102E;
 }
 
 aside {
-    float: right;
+    padding-top: 1em;
     width: 20%;
-    height: 50%;
-    padding: 0 0 0 8em;
+    float:right;
 }
-aside li {
-    padding: .2em;
-}
-
-aside li a {
-    display: block;
-    width: 11em;
-    font-family: Arial Black;
-    color: black;
-    text-align: center;
+section.nav-buttons {
+    padding top: 10em;
 }
 
-aside a{
-    text-decoration: none;
-    background-color: gray;
-    font-size: 1.4em;
-    color: black;
-}
-
-aside h2 {
-    font-size: 175%;
-    color: maroon;
-    margin-bottom: .15em;
-}
-
-aside ul {
-    font-size: 1.5em;
-    line-height: 1.5;
-    margin: 0;
-    padding-left: 0;
-    list-style-type: none;
-}
 
 aside a:hover, aside a:focus {
     color: maroon;
+}
+aside button {
+    background-color: #5B6670;
+    color: white;
+    width:15em;
+    text-align: center;
+    font: Arial Black;
+    font-size: 1.2em;
+    padding: .5em 0 .5em 0;
+    border-color: white;
+    font-family: Arial Black;
 }
 
 #nav_menu {
     position: relative;
     clear: left;
+    float: right;
 }
 
 #nav_menu ul {
@@ -165,16 +93,16 @@ aside a:hover, aside a:focus {
 }
 
 #nav_menu ul li {
-    float: left;
+    float: right;
     display: flex;
     flex-basis: 33.3%;
+    padding-right: 1em;
 }
 
 #nav_menu li a {
     display: block;
-    padding: .7em 0;
-    text-align: center;
-    font-size: 2.3em;
+    white-space: nowrap;
+    font-size: 1.5em;
     width: 100%;
     font: Arial-Black
     text-align: center;
@@ -190,7 +118,7 @@ aside a:hover, aside a:focus {
     text-decoration-color: #C8102E;
     font-family: Arial Black;
     font-feature-settings: "liga", "kern";
-    text-decoration-thickness: .4em;
+    text-decoration-thickness: .3em;
 }
 
 #nav_menu ul li a.current {
