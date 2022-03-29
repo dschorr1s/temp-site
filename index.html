@@ -10,45 +10,78 @@
     <header>
     <a href=index.html><img src="https://semo-cscy.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F659091e9-71af-45fb-9941-0a685f0c4e23%2FUntitled.png?table=block&id=a2f12d10-fd31-4b79-aa74-ea5f5fc3eedd&spaceId=4021a294-21ef-4cd2-90d8-f2296171446b&width=2000&userId=&cache=v2" alt="SEMO Logo"></a>
     <h1>Help Center: CS Grad Students</h1>
-    </header>
+
     <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
             <li><a href="index.html" class= "current">Prospective Students</a>
-            <li><a href="current-students.html">Current Students</a>
-            <li><a href="new-students.html">New Students</a>
+            <li><a href="current-students.html">New Students</a>
+            <li><a href="new-students.html">Current Students</a>
 	    </ul>
     </nav>
+    </header>
     <main>
-        <div>
+       <img class=content src="https://images.pexels.com/photos/163125/board-printed-circuit-board-computer-electronics-163125.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Circuit Board Computer Electronics"> 
+        <section class= nav-buttons>
         <aside>
-            <ul>
-                <li><a href="https://semo.instructure.com/">Canvas</a>
-                </li>
-                <li><a href="https://portal.semo.edu/">SEMO Portal</a>
-                </li>
-                <li><a href="https://outlook.office.com/mail/">Outlook</a>
-                </li>
-                <li><a href="https://library.semo.edu/">Kent Library</a>
-                </li>
-                <li><a href="https://semo.edu/colleges-departments/business-computing/computer-science/index.html">Dept. Contact Info</a>
-                </li>
-            </ul>
+            <button>Programs</button>
+            <button>Tuition and Scholarship</button>
+            <button>Jobs</button>
+            <button>Enrollment</button>
+            <button>Quick Links</button>
+            <button>Graduation</button>  
         </aside>
-        <img class=content src="https://images.pexels.com/photos/163125/board-printed-circuit-board-computer-electronics-163125.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Circuit Board Computer Electronics">   
-    <p class=bold>Welcome to the Computer Science Grad Student help center!
-    </p>
-    <p class=content>Welcome to the <b>MS program in the Computer Science department</b> in Harrison College of Business and Computing(HCBC)!
-    <br></p>
-    <p class=content>We are extremely thrilled to have you in our <i>ABET-accredited and NSA-designated program</i> which will serve you well in meeting your professional goals.
-    <br></p>
-    <p class=content>We're here to answer your questions. Can't find what you're looking for? Send our support team a note at <a href = "mailto: csgradprograms@semo.edu">csgradprograms@semo.edu</a>
-    <br></p>
-    <p class=content>You can also visit the SEMO page for the Department of Computer Science <a href = https://semo.edu/colleges-departments/business-computing/computer-science>here</a>.
-    </p>
-    
+            </section>
+        <section class=accordion-content>
+            <button class="accordion">Program Overview</button>
+                <div class="panel">
+                  <p></p>
+                </div>
+                <button class="accordion">Curriculum</button>
+                <div class="panel">
+                  <p></p>
+                </div>
+                <button class="accordion">Course Description</button>
+                <div class="panel">
+                  <p></p>
+                </div>
+                <button class="accordion">Pre-requisites</button>
+                <div class="panel">
+                  <p></p>
+                </div>
+                <button class="accordion">Faculty and Staff</button>
+                <div class="panel">
+                  <p></p>
+                </div>
+                <button class="accordion">FAQ</button>
+                <div class="panel">
+                  <p></p>
+                </div>
+        </section>
+        
+    </main>
     <footer> 
 <p>&copy; Southeast Missouri State University 2022</p>
 </footer>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 </body>
 <html>
