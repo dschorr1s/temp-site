@@ -11,6 +11,9 @@ header img{
     float: left;
 }
 
+main {
+    width: 100%;
+}
 header h1{
     padding-left:1em;
     padding-top: 0.5em;
@@ -34,19 +37,20 @@ p.content{
 
 img.content{
     float: left;
-    padding-top: 3em;
-    padding-right: 3em;
-    padding-left: 3em;
+    padding-top: 1.3em;
+    padding-right: 1em;
+    padding-left: 1em;
     height: 20em;
-    width: auto;
+    width: 20%;
 }
 
 
 footer{
-    position:sticky;
-    left: 0;
-    width: 100%;
-    height: 4.8em;
+     position:fixed;
+    bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
     
     text-align: center;
     background-color: #C8102E;
@@ -54,11 +58,8 @@ footer{
 
 aside {
     padding-top: 1em;
-    width: 20%;
+    width: 30%;
     float:right;
-}
-section.nav-buttons {
-    padding top: 10em;
 }
 
 
@@ -75,6 +76,49 @@ aside button {
     padding: .5em 0 .5em 0;
     border-color: white;
     font-family: Arial Black;
+}
+
+.accordion-content {
+    padding-top: 1.3em;
+}
+.accordion {
+  background-color: #A2AAAD;
+  color: black;
+  cursor: pointer;
+  padding: .5em 0 .5em 0;
+  width: 46%;
+    height: 5%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+    font-family: Arial Black;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\25BC'; /* Unicode character for "plus" sign (+) */
+  font-size: 1.2em;
+  color: black;
+  float: right;
+  margin-left: .5em;
+    margin-right: .2em;
+}
+
+.active:after {
+  content: "\25B2"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
 
 #nav_menu {
@@ -118,7 +162,6 @@ aside button {
     text-decoration-color: #C8102E;
     font-family: Arial Black;
     font-feature-settings: "liga", "kern";
-    text-decoration-thickness: .3em;
 }
 
 #nav_menu ul li a.current {
@@ -134,3 +177,4 @@ aside button {
 #mobile_menu {
     display: none;
 }
+

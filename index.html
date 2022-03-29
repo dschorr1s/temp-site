@@ -21,6 +21,7 @@
     </nav>
     </header>
     <main>
+       <img class=content src="https://images.pexels.com/photos/163125/board-printed-circuit-board-computer-electronics-163125.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Circuit Board Computer Electronics"> 
         <section class= nav-buttons>
         <aside>
             <button>Programs</button>
@@ -31,23 +32,56 @@
             <button>Graduation</button>  
         </aside>
             </section>
-        <img class=content src="https://images.pexels.com/photos/163125/board-printed-circuit-board-computer-electronics-163125.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Circuit Board Computer Electronics">   
-        <section class=accordion>
-    <p class=bold>Welcome to the Computer Science Grad Student help center!
-    </p>
-    <p class=content>Welcome to the <b>MS program in the Computer Science department</b> in Harrison College of Business and Computing(HCBC)!
-    <br></p>
-    <p class=content>We are extremely thrilled to have you in our <i>ABET-accredited and NSA-designated program</i> which will serve you well in meeting your professional goals.
-    <br></p>
-    <p class=content>We're here to answer your questions. Can't find what you're looking for? Send our support team a note at <a href = "mailto: csgradprograms@semo.edu">csgradprograms@semo.edu</a>
-    <br></p>
-    <p class=content>You can also visit the SEMO page for the Department of Computer Science <a href = https://semo.edu/colleges-departments/business-computing/computer-science>here</a>.
-    </p>
-            </section>
+        <section class=accordion-content>
+            <button class="accordion">Program Overview</button>
+                <div class="panel">
+                  <p></p>
+                </div>
+                <button class="accordion">Curriculum</button>
+                <div class="panel">
+                  <p></p>
+                </div>
+                <button class="accordion">Course Description</button>
+                <div class="panel">
+                  <p></p>
+                </div>
+                <button class="accordion">Pre-requisites</button>
+                <div class="panel">
+                  <p></p>
+                </div>
+                <button class="accordion">Faculty and Staff</button>
+                <div class="panel">
+                  <p></p>
+                </div>
+                <button class="accordion">FAQ</button>
+                <div class="panel">
+                  <p></p>
+                </div>
+        </section>
         
     </main>
     <footer> 
 <p>&copy; Southeast Missouri State University 2022</p>
 </footer>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 </body>
 <html>
