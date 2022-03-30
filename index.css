@@ -27,38 +27,38 @@ header h1{
     text-align: center;
 }
 
-p.content{
-    text-align: center;
-    font-family: "Lyon Display Web", Times, "Times New Roman", serif;
-    font-size: 24px;
-    margin-left: 15em;
-    margin-right: 15em;
+#cs-cy-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+
+
 
 img.content{
     float: left;
     padding-top: 1.3em;
-    padding-right: 1em;
     padding-left: 1em;
+    padding-right: 1.5em;
     height: 20em;
     width: 20%;
 }
 
 
 footer{
-     position:fixed;
+    position:fixed;
     bottom:0;
-   width:100%;
-   height:60px;   /* Height of the footer */
-   background:#6cf;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    background:#6cf;
     
     text-align: center;
     background-color: #C8102E;
 }
 
 aside {
-    padding-top: 1em;
-    width: 30%;
+    padding-top: 1.3em;
+    width: 20%;
     float:right;
 }
 
@@ -76,6 +76,7 @@ aside button {
     padding: .5em 0 .5em 0;
     border-color: white;
     font-family: Arial Black;
+    border-radius: .5em;
 }
 
 .accordion-content {
@@ -86,13 +87,14 @@ aside button {
   color: black;
   cursor: pointer;
   padding: .5em 0 .5em 0;
-  width: 46%;
-    height: 5%;
+  width: 56%;
+    height: 6%;
   text-align: center;
   border: none;
   outline: none;
   transition: 0.4s;
     font-family: Arial Black;
+    border-radius: .5em;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
