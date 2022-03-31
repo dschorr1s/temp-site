@@ -8,9 +8,23 @@
 </head>
 <body>
     <header>
-    <a href=index.html><img src="https://semo-cscy.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F659091e9-71af-45fb-9941-0a685f0c4e23%2FUntitled.png?table=block&id=a2f12d10-fd31-4b79-aa74-ea5f5fc3eedd&spaceId=4021a294-21ef-4cd2-90d8-f2296171446b&width=2000&userId=&cache=v2" alt="SEMO Logo"></a>
-    <h1>Ask Rowdy - Student Help Center</h1>
 
+
+    <div class=row>
+        <a class=col-3 href=index.html><img src="https://semo-cscy.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F659091e9-71af-45fb-9941-0a685f0c4e23%2FUntitled.png?table=block&id=a2f12d10-fd31-4b79-aa74-ea5f5fc3eedd&spaceId=4021a294-21ef-4cd2-90d8-f2296171446b&width=2000&userId=&cache=v2" alt="SEMO Logo"></a>
+        <h1 class= col-9>Ask Rowdy - Student Help Center</h1>
+    </div>
+    <div class=row>
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu" class=col-7>
+            <ul>
+                <li><a href="index.html" class= "current">Prospective Students</a>
+                <li><a href="new-students.html">New Students</a>
+                <li><a href="current-students.html">Current Students</a>
+            </ul>
+        </nav>
+    </div>
+    
     <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
@@ -19,56 +33,56 @@
             <li><a href="current-students.html">Current Students</a>
 	    </ul>
     </nav>
+      
     </header>
+  
     <main>
-       <br>
-       <section id=cs-cy-button>
+       <section id=cs-cy-button class=col-12>
             <button class=cs-cy-buttons>Computer Science</button>
             <button class = cs-cy-buttons>Cybersecurity</button>
             </section>
-
-       <img class=content src="https://images.pexels.com/photos/163125/board-printed-circuit-board-computer-electronics-163125.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Circuit Board Computer Electronics"> 
-        <section class= nav-buttons>
-        <aside>
-            <button>Programs</button>
-            <button>Tuition and Scholarship</button>
-            <button>Jobs</button>
-            <button>Enrollment</button>
-            <button>Quick Links</button>
-            <button>Graduation</button>  
-        </aside>
+        <div class=row>
+            <img id=img-content class=col-2 src="https://images.pexels.com/photos/163125/board-printed-circuit-board-computer-electronics-163125.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Circuit Board Computer Electronics"> 
+            <section id=accordion-content class=col-7>
+                <button class="accordion">Program Overview</button>
+                    <div class="panel">
+                        <p></p>
+                    </div>
+                    <button class="accordion">Curriculum</button>
+                    <div class="panel">
+                        <p></p>
+                    </div>
+                    <button class="accordion">Program Eligibility</button>
+                    <div class="panel">
+                        <p></p>
+                    </div>
+                    <button class="accordion">Pre-requisites</button>
+                    <div class="panel">
+                        <p></p>
+                    </div>
+                    <button class="accordion">Faculty and Staff</button>
+                    <div class="panel">
+                        <p></p>
+                    </div>
+                    <button class="accordion">FAQ</button>
+                    <div class="panel">
+                        <p></p>
+                    </div>
             </section>
-        <section class=accordion-content>
-            <button class="accordion">Program Overview</button>
-                <div class="panel">
-                  <p></p>
-                </div>
-                <button class="accordion">Curriculum</button>
-                <div class="panel">
-                  <p></p>
-                </div>
-                <button class="accordion">Program Eligibility</button>
-                <div class="panel">
-                  <p></p>
-                </div>
-                <button class="accordion">Pre-requisites</button>
-                <div class="panel">
-                  <p></p>
-                </div>
-                <button class="accordion">Faculty and Staff</button>
-                <div class="panel">
-                  <p></p>
-                </div>
-                <button class="accordion">FAQ</button>
-                <div class="panel">
-                  <p></p>
-                </div>
-        </section>
-        
+            <aside class= col-3>
+                <button>Programs</button>
+                <button>Tuition and Scholarship</button>
+                <button>Jobs</button>
+                <button>Enrollment</button>
+                <button>Quick Links</button>
+                <button>Graduation</button>  
+            </aside> 
+        </div>
+
     </main>
     <footer> 
-<p>&copy; Southeast Missouri State University 2022</p>
-</footer>
+        <p>Contact Us</p>
+    </footer>
 <script>
     var acc = document.getElementsByClassName("accordion");
 var i;
