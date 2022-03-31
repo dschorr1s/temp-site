@@ -2,18 +2,22 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+/* Grey Title Section*/
 header {
-    background-color: lightgray;
+    background-color: lightgrey;
     height: 14em;
 }
-
+/* semo logo */
 header img{
     float: left;
+    padding-top: 0.5em;
 }
 
 main {
     width: 100%;
 }
+
 header h1{
     padding-left:1em;
     padding-top: 0.5em;
@@ -27,102 +31,7 @@ header h1{
     text-align: center;
 }
 
-#cs-cy-button{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-
-
-img.content{
-    float: left;
-    padding-top: 1.3em;
-    padding-left: 1em;
-    padding-right: 1.5em;
-    height: 20em;
-    width: 20%;
-}
-
-
-footer{
-    position:fixed;
-    bottom:0;
-    width:100%;
-    height:60px;   /* Height of the footer */
-    background:#6cf;
-    
-    text-align: center;
-    background-color: #C8102E;
-}
-
-aside {
-    padding-top: 1.3em;
-    width: 20%;
-    float:right;
-}
-
-
-aside a:hover, aside a:focus {
-    color: maroon;
-}
-aside button {
-    background-color: #5B6670;
-    color: white;
-    width:15em;
-    text-align: center;
-    font: Arial Black;
-    font-size: 1.2em;
-    padding: .5em 0 .5em 0;
-    border-color: white;
-    font-family: Arial Black;
-    border-radius: .5em;
-}
-
-.accordion-content {
-    padding-top: 1.3em;
-}
-.accordion {
-  background-color: #A2AAAD;
-  color: black;
-  cursor: pointer;
-  padding: .5em 0 .5em 0;
-  width: 56%;
-    height: 6%;
-  text-align: center;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-    font-family: Arial Black;
-    border-radius: .5em;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-.accordion:after {
-  content: '\25BC'; /* Unicode character for "plus" sign (+) */
-  font-size: 1.2em;
-  color: black;
-  float: right;
-  margin-left: .5em;
-    margin-right: .2em;
-}
-
-.active:after {
-  content: "\25B2"; /* Unicode character for "minus" sign (-) */
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-}
-
+/* Menu */
 #nav_menu {
     position: relative;
     clear: left;
@@ -176,7 +85,124 @@ aside button {
     display: block;
 }
 
+/* CS and CY Buttons */
+#cs-cy-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#cs-cy-button button{
+    background-color: #C8102E;
+    border: none;
+    border-radius: .5em;
+    color: white;
+    text-align: center;
+    font-family: Arial Black;
+    font-size: .8em;
+    padding: .8em;
+    margin-right: .5em;
+    width: 10%;
+    cursor: pointer;
+}
+
+#cs-cy-button button:hover{
+    background-color: black;
+}
+
+
+/* motherboard picture */
+img.content{
+    float: left;
+    padding-top: 1.3em;
+    padding-left: 1em;
+    padding-right: 1.5em;
+    height: 20em;
+    width: 20%;
+}
+
+/* Dark Grey buttons */
+aside {
+    padding-top: 1.3em;
+    width: 20%;
+    float:right;
+}
+
+aside button {
+    background-color: black;
+    color: white;
+    width:15em;
+    text-align: center;
+    font: Arial Black;
+    font-size: 1.2em;
+    padding: .5em 0 .5em 0;
+    border-color: white;
+    font-family: Arial Black;
+    border-radius: .5em;
+    cursor: pointer;
+}
+
+aside button:hover{
+   background-color: #C8102E;
+}
+
+/* center drop down menu */
+.accordion-content {
+    padding-top: 1.3em;
+}
+.accordion {
+  background-color: #A2AAAD;
+  color: black;
+  cursor: pointer;
+  padding: .5em 0 .5em 0;
+  width: 56%;
+    height: 6%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+    font-family: Arial Black;
+    border-radius: .5em;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\25BC'; /* Unicode character for "plus" sign (+) */
+  font-size: 1.2em;
+  color: black;
+  float: right;
+  margin-left: .5em;
+    margin-right: .2em;
+}
+
+.active:after {
+  content: "\25B2"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+
 #mobile_menu {
     display: none;
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    text-align: center;
+    background-color: #C8102E;
 }
 
