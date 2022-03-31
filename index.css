@@ -2,46 +2,91 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+/* grid */
+* {
+  box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding: .5em;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Header */
 header {
     background-color: lightgray;
-    height: 14em;
+    height: auto;
+    width: 100%;
 }
 
 header img{
-    float: left;
+    width: 100%;
+    max-width: 100%;
 }
 
 main {
     width: 100%;
 }
 header h1{
-    padding-left:1em;
-    padding-top: 0.5em;
-    float: left;
-    font-size: 3.2em;
+    
+    margin-top: 1.2em;
+    font-size: 3em;
     font-style: bold;
     font-family: Arial Black, sans-serif;
     color: black;
     text-transform: uppercase;
     margin-bottom: 0;
     text-align: center;
+    /*width: 75%;*/
 }
 
+/* CS and CY Buttons */
 #cs-cy-button{
-    width: 100%;
     display: flex;
     justify-content: center;
+    
 }
 
+#cs-cy-button button{
+    background-color: #C8102E;
+    border: none;
+    border-radius: .5em;
+    color: white;
+    text-align: center;
+    font-family: Arial Black;
+    font-size: .8em;
+    padding: .8em;
+    margin-right: .5em;
+    width: 10%;
+    cursor: pointer;
+}
 
+#cs-cy-button button:hover{
+    background-color: black;
+}
 
-img.content{
-    float: left;
-    padding-top: 1.3em;
-    padding-left: 1em;
-    padding-right: 1.5em;
+#img-content{
+    max-width: 100%;
     height: 20em;
-    width: 20%;
 }
 
 
@@ -49,17 +94,22 @@ footer{
     position:fixed;
     bottom:0;
     width:100%;
-    height:60px;   /* Height of the footer */
-    background:#6cf;
+    height:auto;
     
     text-align: center;
     background-color: #C8102E;
 }
+footer p {
+    font-family: Arial Black;
+    font-size: 1em;
+    display:inline-block;
+    color: white;
+}
 
 aside {
-    padding-top: 1.3em;
-    width: 20%;
-    float:right;
+    /*padding-top: 1.3em;
+    /*margin-right: 0.5em;
+    float:right;*/
 }
 
 
@@ -69,46 +119,46 @@ aside a:hover, aside a:focus {
 aside button {
     background-color: #5B6670;
     color: white;
-    width:15em;
+    width:100%;
+    height: 5%;
     text-align: center;
     font: Arial Black;
     font-size: 1.2em;
-    padding: .5em 0 .5em 0;
+    /*padding: .5em 0 .5em 0;*/
     border-color: white;
     font-family: Arial Black;
     border-radius: .5em;
 }
 
-.accordion-content {
-    padding-top: 1.3em;
+#accordion-content {
 }
 .accordion {
-  background-color: #A2AAAD;
-  color: black;
-  cursor: pointer;
-  padding: .5em 0 .5em 0;
-  width: 56%;
+    background-color: #A2AAAD;
+    color: black;
+    cursor: pointer;
+    margin-top: .25em;
+    width: 100%;
     height: 6%;
-  text-align: center;
-  border: none;
-  outline: none;
-  transition: 0.4s;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
     font-family: Arial Black;
-    border-radius: .5em;
+    border-radius: .25em;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: #ccc;
+    background-color: #A2AAAD;
 }
 
 .accordion:after {
-  content: '\25BC'; /* Unicode character for "plus" sign (+) */
-  font-size: 1.2em;
-  color: black;
-  float: right;
-  margin-left: .5em;
-    margin-right: .2em;
+    content: '\25BC'; /* Unicode character for "plus" sign (+) */
+    font-size: 1.2em;
+    color: white;
+    float: right;
+    /*padding-left: .5em;
+    padding-right: .2em;*/
 }
 
 .active:after {
@@ -117,31 +167,31 @@ aside button {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
+    background-color: lightgray;
+    display: block;
+    overflow: hidden;
+    width: 100%;
 }
 
 #nav_menu {
     position: relative;
     clear: left;
     float: right;
+    background-color: lightgray;
 }
 
 #nav_menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: relative;
+    /*position: relative;*/
     display: flex;
     flex-basis: 100%;
 }
 
 #nav_menu ul li {
     float: right;
-    display: flex;
-    flex-basis: 33.3%;
+    display: in-line block;
     padding-right: 1em;
 }
 
@@ -149,16 +199,14 @@ aside button {
     display: block;
     white-space: nowrap;
     font-size: 1.5em;
-    width: 100%;
     font: Arial-Black
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    /*padding-top: 1em;
+    padding-bottom: 1em;*/
     text-decoration: none;
     color: black;
     font-weight: bold;
-    background-repeat: repeat-x;
-    background-position: 0 61%;
+    /*background-repeat: repeat-x;
+    background-position: 0 61%;*/
     text-decoration: underline;
     text-transform: uppercase;
     text-decoration-color: #C8102E;
