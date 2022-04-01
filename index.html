@@ -3,6 +3,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="jquery.slicknav.min.js"></script>
     <title>Help Center: CS Grad Student</title>
 </head>
@@ -15,8 +17,19 @@
         <h1 class= col-9>Ask Rowdy - Student Help Center</h1>
     </div>
     <div class=row>
-        <nav id="mobile_menu"></nav>
-        <nav id="nav_menu" class=col-7>
+        <div class="topnav">
+          <a href="#home" class="active-mobile">New Students</a>
+          <!-- Navigation links (hidden by default) -->
+          <div id="myLinks">
+            <a href="#news">Computer Science</a>
+            <a href="#contact">CyberSecurity</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <nav id="nav_menu" class=col-12>
             <ul>
                 <li><a href="index.html" class= "current">Prospective Students</a>
                 <li><a href="new-students.html">New Students</a>
@@ -24,15 +37,6 @@
             </ul>
         </nav>
     </div>
-    
-    <nav id="mobile_menu"></nav>
-    <nav id="nav_menu">
-        <ul>
-            <li><a href="index.html" class= "current">Prospective Students</a>
-            <li><a href="new-students.html">New Students</a>
-            <li><a href="current-students.html">Current Students</a>
-	    </ul>
-    </nav>
       
     </header>
   
@@ -43,7 +47,7 @@
             </section>
         <div class=row>
             <img id=img-content class=col-2 src="https://images.pexels.com/photos/163125/board-printed-circuit-board-computer-electronics-163125.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Circuit Board Computer Electronics"> 
-            <section id=accordion-content class=col-7>
+            <section id=accordion-content class=col-8>
                 <button class="accordion">Program Overview</button>
                     <div class="panel">
                         <p></p>
@@ -69,7 +73,7 @@
                         <p></p>
                     </div>
             </section>
-            <aside class= col-3>
+            <aside class= col-2>
                 <button>Programs</button>
                 <button>Tuition and Scholarship</button>
                 <button>Jobs</button>
@@ -101,6 +105,16 @@ for (i = 0; i < acc.length; i++) {
       panel.style.display = "block";
     }
   });
+}
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
 </script>
 </body>
