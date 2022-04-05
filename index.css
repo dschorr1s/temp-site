@@ -3,6 +3,7 @@ html, body {
     padding: 0;
 }
 
+
 .topnav {
   overflow: hidden;
   background-color: black;
@@ -81,9 +82,11 @@ header {
     background-color: lightgray;
     height: auto;
     width: 100%;
+
 }
 
 header img{
+
     width: 80%;
     max-width: 100%;
 }
@@ -92,20 +95,21 @@ main {
     width: 100%;
 }
 header h1{
-    
     margin-top: .2em;
     font-size: 3em;
+
     font-style: bold;
     font-family: Arial Black, sans-serif;
     color: black;
     text-transform: uppercase;
     margin-bottom: 0;
     text-align: center;
-    /*width: 75%;*/
 }
+
 
 /* CS and CY Buttons */
 #cs-cy-button{
+    width: 100%;
     display: flex;
     justify-content: center;
     
@@ -132,7 +136,9 @@ header h1{
 
 #img-content{
     max-width: 100%;
+
     height: 20em;
+    width: 20%;
 }
 
 
@@ -153,9 +159,9 @@ footer p {
 }
 
 aside {
-    /*padding-top: 1.3em;
-    /*margin-right: 0.5em;
-    float:right;*/
+    padding-top: 1.3em;
+    width: 20%;
+    float:right;
 }
 
 
@@ -165,47 +171,50 @@ aside a:hover, aside a:focus {
 aside button {
     background-color: #5B6670;
     color: white;
-    width:100%;
-    height: 5%;
+    width:15em;
     text-align: center;
     font: Arial Black;
+
     font-size: 1em;
     /*padding: .5em 0 .5em 0;*/
+
     border-color: white;
     font-family: Arial Black;
     border-radius: .5em;
     white-space: nowrap;
 }
 
+
 #accordion-content {
+
 }
 .accordion {
-    background-color: #A2AAAD;
-    color: black;
-    cursor: pointer;
-    margin-top: .25em;
-    width: 100%;
+  background-color: #A2AAAD;
+  color: black;
+  cursor: pointer;
+  padding: .5em 0 .5em 0;
+  width: 56%;
     height: 6%;
-    text-align: center;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
     font-family: Arial Black;
-    border-radius: .25em;
+    border-radius: .5em;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-    background-color: #A2AAAD;
+  background-color: #ccc;
 }
 
 .accordion:after {
-    content: '\25BC'; /* Unicode character for "plus" sign (+) */
-    font-size: 1.2em;
-    color: white;
-    float: right;
-    /*padding-left: .5em;
-    padding-right: .2em;*/
+  content: '\25BC'; /* Unicode character for "plus" sign (+) */
+  font-size: 1.2em;
+  color: black;
+  float: right;
+  margin-left: .5em;
+    margin-right: .2em;
 }
 
 .active:after {
@@ -214,10 +223,10 @@ aside button {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-    background-color: lightgray;
-    display: block;
-    overflow: hidden;
-    width: 100%;
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
 
 #nav_menu {
@@ -274,6 +283,7 @@ aside button {
 #mobile_menu {
     display: none;
 }
+
 
 @media only screen and (max-width: 905px) {
   /* For mobile phones: */
