@@ -10,8 +10,6 @@
 </head>
 <body>
     <header>
-    <a href=index.html><img src="https://semo-cscy.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F659091e9-71af-45fb-9941-0a685f0c4e23%2FUntitled.png?table=block&id=a2f12d10-fd31-4b79-aa74-ea5f5fc3eedd&spaceId=4021a294-21ef-4cd2-90d8-f2296171446b&width=2000&userId=&cache=v2" alt="SEMO Logo"></a>
-    <h1>Ask Rowdy - Student Help Center</h1>
 
     <div class=row>
         <a class=col-3 href=index.html><img src="https://semo-cscy.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F659091e9-71af-45fb-9941-0a685f0c4e23%2FUntitled.png?table=block&id=a2f12d10-fd31-4b79-aa74-ea5f5fc3eedd&spaceId=4021a294-21ef-4cd2-90d8-f2296171446b&width=2000&userId=&cache=v2" alt="SEMO Logo"></a>
@@ -44,8 +42,8 @@
     <main>
        <br>
        <section id=cs-cy-button>
-            <button class=cs-cy-buttons>Computer Science</button>
-            <button class = cs-cy-buttons>Cybersecurity</button>
+            <button class=cs-cy-buttons id=csBtn>Computer Science</button>
+            <button class = cs-cy-buttons id=cyBtn>Cybersecurity</button>
             </section>
         <div class=row>
             <img id=img-content class=col-2 src="https://images.pexels.com/photos/163125/board-printed-circuit-board-computer-electronics-163125.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Circuit Board Computer Electronics"> 
@@ -85,87 +83,40 @@
             </aside> 
         </div>
 
-       <img class=content src="https://images.pexels.com/photos/163125/board-printed-circuit-board-computer-electronics-163125.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Circuit Board Computer Electronics"> 
-        <section class= nav-buttons>
-        <aside>
-            <button>
-                <a href="https://semo.edu/academics/programs/index.html#computerscience_graduate_1">Programs</a>
-            </button>
-            <button>
-                <a href="https://semo.edu/student-support/financial-services/financial-aid/se-scholarships.html">Tuition and Scholorships</a>
-            </button>
-            <button>
-                <a href="https://semo.edu/international/admissions/grad.html">International Students</a>
-            </button>
-            <button>
-                <a href="https://app.semoadmissions.org/?_sp=66d2fcbf-b482-4b52-a0f0-db49197406c8.1634057738901">Enrollment</a>
-            </button>
-            <button>Quick Links</button>
-            <button>
-                <a href="https://semo.edu/student-support/academic-support/registrar/graduation/apply-graduation.html">Graduation</a>
-            </button>  
-        </aside>
-            </section>
-        <section class=accordion-content>
-            <button class="accordion">Program Overview</button>
-                <div class="panel">
-                  <p></p>
-                </div>
-                <button class="accordion">Curriculum</button>
-                <div class="panel">
-                  <p></p>
-                </div>
-                <button class="accordion">Program Eligibility</button>
-                <div class="panel">
-                  <p></p>
-                </div>
-                <button class="accordion">Pre-requisites</button>
-                <div class="panel">
-                  <p></p>
-                </div>
-                <button class="accordion">Faculty and Staff</button>
-                <div class="panel">
-                  <p></p>
-                </div>
-                <button class="accordion">FAQ</button>
-                <div class="panel">
-                  <p></p>
-                </div>
-        </section>
+       
         
     </main>
     <footer> 
-<p>&copy; Southeast Missouri State University 2022</p>
-</footer>
-<script>
-    var acc = document.getElementsByClassName("accordion");
-var i;
+        <p>Contact Us</p>
+    </footer>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
-<script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
+            /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+            }
+          });
+        }
+
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 <html>
