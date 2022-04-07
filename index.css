@@ -244,7 +244,7 @@ aside button {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: relative;*/
+    position: relative;
     display: flex;
     flex-basis: 100%;
 }
@@ -259,14 +259,9 @@ aside button {
     display: block;
     white-space: nowrap;
     font-size: 1.5em;
-    font: Arial-Black
-    /*padding-top: 1em;
-    padding-bottom: 1em;*/
-    text-decoration: none;
+    font: Arial-Black;
     color: black;
     font-weight: bold;
-    /*background-repeat: repeat-x;
-    background-position: 0 61%;*/
     text-decoration: underline;
     text-transform: uppercase;
     text-decoration-color: #C8102E;
