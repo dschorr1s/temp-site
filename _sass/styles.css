@@ -3,11 +3,17 @@ html, body {
     padding: 0;
 }
 
+main {
+    margin-bottom: 11em;
+}
 
+#mobile-aside{
+    display: none;
+}
 .topnav {
-  overflow: hidden;
-  background-color: black;
-  position: relative;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
     border: white;
     display: none;
 }
@@ -77,12 +83,12 @@ html, body {
   clear: both;
   display: table;
 }
+
 /* Header */
 header {
     background-color: lightgray;
     height: auto;
     width: 100%;
-
 }
 
 header img{
@@ -91,9 +97,6 @@ header img{
     max-width: 100%;
 }
 
-main {
-    width: 100%;
-}
 header h1{
     margin-top: .2em;
     font-size: 3em;
@@ -109,10 +112,8 @@ header h1{
 
 /* CS and CY Buttons */
 #cs-cy-button{
-    width: 100%;
     display: flex;
     justify-content: center;
-    
 }
 
 #cs-cy-button button{
@@ -124,6 +125,7 @@ header h1{
     font-family: Arial Black;
     font-size: .8em;
     padding: .6em;
+    margin-top: 0.75em;
     width: 20%;
     cursor: pointer;
     white-space: nowrap;
@@ -141,17 +143,16 @@ header h1{
 }
 #img-content{
     max-width: 100%;
-
     height: 20em;
 }
 
 
 footer{
-    position: fixed;
-    bottom: 0;
+    position:-webkit-sticky;
+    position:sticky;
     width:100%;
-    height:auto;
-    
+    height:3.5em;
+    bottom: 0;
     text-align: center;
     background-color: #C8102E;
 }
@@ -162,15 +163,12 @@ footer p {
     color: white;
 }
 
-/*aside {
-    padding-top: 1.3em;
-    width: 100%;
-    float:right;
-}*/
-
-
 aside a:hover, aside a:focus {
     color: maroon;
+}
+
+aside {
+    padding-bottom: 3.5em;
 }
 aside button {
     background-color: #5B6670;
@@ -178,17 +176,12 @@ aside button {
     width:100%;
     text-align: center;
     font: Arial Black;
-
     font-size: 1em;
-    /*padding: .5em 0 .5em 0;*/
-
     border-color: white;
     font-family: Arial Black;
     border-radius: .5em;
     white-space: nowrap;
 }
-
-
 .accordion {
     background-color: #A2AAAD;
     color: black;
@@ -196,7 +189,7 @@ aside button {
     padding: .5em 0 .5em 0;
     margin-bottom: .2em;
     width: 100%;
-    height: 6%;
+    height: 5%;
     text-align: center;
     border-color: white;
     transition: 0.4s;
@@ -210,12 +203,12 @@ aside button {
 }
 
 .accordion:after {
-  content: '\25BC'; /* Unicode character for "plus" sign (+) */
-  font-size: 1.2em;
-  color: white;
-  float: right;
-  margin-left: .5em;
-    margin-right: .2em;
+    content: '\25BC'; /* Unicode character for "plus" sign (+) */
+    font-size: 1.2em;
+    color: white;
+    float: right;
+    /*margin-left: .5em;
+    margin-right: .2em;*/
 }
 
 .active:after {
@@ -226,13 +219,15 @@ aside button {
 .panel {
   padding: 0 18px;
   background-color: white;
+  border-color: #5B6670;
+  border-style: solid;
+  border-radius: .5em;
   display: none;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 #nav_menu {
     position: relative;
-   
     float: right;
     background-color: lightgray;
 }
@@ -243,6 +238,7 @@ aside button {
     padding: 0;
     position: relative;
     display: flex;
+    float: right;
     flex-basis: 100%;
 }
 
@@ -253,8 +249,6 @@ aside button {
 }
 
 #nav_menu li a {
-    display: block;
-    white-space: nowrap;
     font-size: 1.5em;
     font: Arial-Black;
     color: black;
@@ -281,10 +275,19 @@ aside button {
 }
 
 
-@media only screen and (max-width: 905px) {
-  /* For mobile phones: */
+@media only screen and (max-width: 900px) {
+  /* For mobile devices: */
     [class*="col-"] {
         width: 100%;
+    }
+    #desktop-aside{
+        display: none;
+    }
+    #mobile-aside {
+        display: block;
+    }
+    aside button {
+        width: 49.5%;
     }
     #nav_menu{
         display: none;
@@ -302,12 +305,18 @@ aside button {
         display: none;
     }
     header h1 {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     #cs-cy-button button {
         width: 45%;
     }
-    footer {
-        position: relative;
+}
+
+@media only screen and (max-width: 414px) {
+    aside button {
+        width: 100%;
+    }
+    header h1{
+        font-size: 1em;
     }
 }

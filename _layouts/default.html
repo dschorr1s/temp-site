@@ -10,11 +10,11 @@
     <header>
 
     <div class=row>
-        <a class=col-3 href=index.html><img src="https://semo-cscy.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F659091e9-71af-45fb-9941-0a685f0c4e23%2FUntitled.png?table=block&id=a2f12d10-fd31-4b79-aa74-ea5f5fc3eedd&spaceId=4021a294-21ef-4cd2-90d8-f2296171446b&width=2000&userId=&cache=v2" alt="SEMO Logo"></a>
+        <a class=col-3 href=../index.html><img src="https://semo-cscy.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F659091e9-71af-45fb-9941-0a685f0c4e23%2FUntitled.png?table=block&id=a2f12d10-fd31-4b79-aa74-ea5f5fc3eedd&spaceId=4021a294-21ef-4cd2-90d8-f2296171446b&width=2000&userId=&cache=v2" alt="SEMO Logo"></a>
         <h1 class= col-9>Ask Rowdy - Student Help Center</h1>
     </div>
     <div class=row>
-        <div class="topnav">
+        <div class="topnav" class=col-12>
           <a href="#home" class="active-mobile">New Students</a>
           <!-- Navigation links (hidden by default) -->
           <div id="myLinks">
@@ -38,21 +38,30 @@
 
     </header>
     <main>
-       <br>
-       <section id=cs-cy-button>
+       <section id=cs-cy-button class=row class=col-12>
             <button class=cs-cy-buttons id=csBtn>Computer Science</button>
             <button class = cs-cy-buttons id=cyBtn>Cybersecurity</button>
             </section>
         <div class=row>
             <img id=img-content class=col-2 src="https://images.pexels.com/photos/163125/board-printed-circuit-board-computer-electronics-163125.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Circuit Board Computer Electronics"> 
-            <section id=accordion-content class=col-8>
+           
+            <aside class= col-3 id="mobile-aside">
+                <button>Programs</button>
+                <button>Tuition and Scholarship</button>
+                <button>Jobs</button>
+                <button>Enrollment</button>
+                <button>Quick Links</button>
+                <button>Graduation</button>  
+            </aside> 
+
+            <section id=accordion-content class=col-7>
                 <button class="accordion">Program Overview</button>
                     <div class="panel">
-                        <p></p>
+                        <p>Jekyll is a static site generator with built-in support for GitHub Pages and a simplified build process. Jekyll takes Markdown and HTML files and creates a complete static website based on your choice of layouts. Jekyll supports Markdown and Liquid, a templating language that loads dynamic content on your site.</p>
                     </div>
                     <button class="accordion">Curriculum</button>
                     <div class="panel">
-                        <p></p>
+                        <p>{{content}}</p>
                     </div>
                     <button class="accordion">Program Eligibility</button>
                     <div class="panel">
@@ -71,7 +80,7 @@
                         <p></p>
                     </div>
             </section>
-            <aside class= col-2>
+            <aside class= col-3 id="desktop-aside">
                 <button>Programs</button>
                 <button>Tuition and Scholarship</button>
                 <button>Jobs</button>
@@ -118,6 +127,3 @@
     </script>
 </body>
 <html>
-
-
-{{ content }}
