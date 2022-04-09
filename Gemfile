@@ -17,3 +17,4 @@ Gem::Specification.new do |spec|
   end
 
 gem "jekyll", "~> 4.2"
+gem "jekyll-sitemap"
